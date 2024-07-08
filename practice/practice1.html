@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 조회 서비스</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        #searchInput, #searchBtn {
+            margin-top: 20px;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #searchBtn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #moviesList, #movieDetails, #movieClips {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>영화 조회 서비스</h1>
+    <input type="text" id="searchInput" placeholder="영화 제목을 입력해주세요">
+    <button id="searchBtn">검색</button>
+    <div id="moviesList"></div>
+    <div id="movieDetails"></div>
+    <div id="movieClips"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
